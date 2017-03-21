@@ -1,0 +1,9 @@
+C:\Users\student\Desktop\projektp4\RosterBuilder\RosterBuilder\bin\Debug\RosterBuilder.exe.config
+C:\Users\student\Desktop\projektp4\RosterBuilder\RosterBuilder\bin\Debug\RosterBuilder.exe
+C:\Users\student\Desktop\projektp4\RosterBuilder\RosterBuilder\bin\Debug\RosterBuilder.pdb
+C:\Users\student\Desktop\projektp4\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\projektp4\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.Form1.resources
+C:\Users\student\Desktop\projektp4\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.Properties.Resources.resources
+C:\Users\student\Desktop\projektp4\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.csproj.GenerateResource.Cache
+C:\Users\student\Desktop\projektp4\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.exe
+C:\Users\student\Desktop\projektp4\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.pdb
