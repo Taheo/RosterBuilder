@@ -73,9 +73,9 @@
             // 
             this.addnewbtn.Location = new System.Drawing.Point(625, 532);
             this.addnewbtn.Name = "addnewbtn";
-            this.addnewbtn.Size = new System.Drawing.Size(97, 48);
+            this.addnewbtn.Size = new System.Drawing.Size(90, 55);
             this.addnewbtn.TabIndex = 4;
-            this.addnewbtn.Text = "Add new Roster";
+            this.addnewbtn.Text = "New  Roster";
             this.addnewbtn.UseVisualStyleBackColor = true;
             this.addnewbtn.Click += new System.EventHandler(this.addnewbtn_Click);
             // 
@@ -83,6 +83,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(984, 606);
             this.Controls.Add(this.addnewbtn);
             this.Controls.Add(this.nicklabel);
