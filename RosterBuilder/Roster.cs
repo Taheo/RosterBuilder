@@ -15,8 +15,7 @@ namespace RosterBuilder
         public Roster()
         {
             InitializeComponent();
-
-            }
+        }
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -33,10 +32,10 @@ namespace RosterBuilder
                 switch ((string)armychoice.SelectedItem)
                 {
                 case "Empire":
-                        codex.AppendText("Knight");
-                        codex.AppendText(Environment.NewLine);
-                        codex.AppendText("Swordsman");
-                        codex.AppendText(Environment.NewLine);
+                    codex.AppendText("Knight");
+                    codex.AppendText(Environment.NewLine);
+                    codex.AppendText("Swordsman");
+                    codex.AppendText(Environment.NewLine);
                         break;
                 case "Elves":
                     codex.AppendText("Fighter");
@@ -47,7 +46,7 @@ namespace RosterBuilder
                 case "Chaos":
                     codex.AppendText("Dark Knight");
                     codex.AppendText(Environment.NewLine);
-                    codex.AppendText("Swordsman");
+                    codex.AppendText("Berserker");
                     codex.AppendText(Environment.NewLine);
                     break;
             }

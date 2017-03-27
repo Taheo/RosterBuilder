@@ -37,15 +37,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.addbtn = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.armychoice = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.savebtn = new System.Windows.Forms.Button();
+            this.printbtn = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.sendbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // codex
@@ -128,15 +129,15 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Roster";
             // 
-            // button1
+            // addbtn
             // 
-            this.button1.Location = new System.Drawing.Point(37, 364);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 30);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.addbtn.Location = new System.Drawing.Point(37, 364);
+            this.addbtn.Name = "addbtn";
+            this.addbtn.Size = new System.Drawing.Size(75, 30);
+            this.addbtn.TabIndex = 9;
+            this.addbtn.Text = "Add";
+            this.addbtn.UseVisualStyleBackColor = true;
+            this.addbtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox2
             // 
@@ -175,23 +176,23 @@
             this.textBox3.Size = new System.Drawing.Size(80, 20);
             this.textBox3.TabIndex = 13;
             // 
-            // button2
+            // savebtn
             // 
-            this.button2.Location = new System.Drawing.Point(507, 470);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 55);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = true;
+            this.savebtn.Location = new System.Drawing.Point(507, 470);
+            this.savebtn.Name = "savebtn";
+            this.savebtn.Size = new System.Drawing.Size(90, 55);
+            this.savebtn.TabIndex = 14;
+            this.savebtn.Text = "Save";
+            this.savebtn.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // printbtn
             // 
-            this.button3.Location = new System.Drawing.Point(603, 470);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 55);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Print";
-            this.button3.UseVisualStyleBackColor = true;
+            this.printbtn.Location = new System.Drawing.Point(603, 470);
+            this.printbtn.Name = "printbtn";
+            this.printbtn.Size = new System.Drawing.Size(90, 55);
+            this.printbtn.TabIndex = 15;
+            this.printbtn.Text = "Print";
+            this.printbtn.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
@@ -200,19 +201,29 @@
             this.textBox4.Size = new System.Drawing.Size(80, 20);
             this.textBox4.TabIndex = 16;
             // 
+            // sendbtn
+            // 
+            this.sendbtn.Location = new System.Drawing.Point(699, 470);
+            this.sendbtn.Name = "sendbtn";
+            this.sendbtn.Size = new System.Drawing.Size(90, 55);
+            this.sendbtn.TabIndex = 17;
+            this.sendbtn.Text = "Send on Mail";
+            this.sendbtn.UseVisualStyleBackColor = true;
+            // 
             // Roster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 605);
+            this.Controls.Add(this.sendbtn);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.printbtn);
+            this.Controls.Add(this.savebtn);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.armychoice);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.addbtn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -238,15 +249,16 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button addbtn;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ComboBox armychoice;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button savebtn;
+        private System.Windows.Forms.Button printbtn;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button sendbtn;
     }
 }
 

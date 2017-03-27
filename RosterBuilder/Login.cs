@@ -16,5 +16,20 @@ namespace RosterBuilder
         {
             InitializeComponent();
         }
+
+        private void loginbtn_Click(object sender, EventArgs e)
+        {
+           
+                if (logintext.Text != "" && 
+                logintext.Text.Contains('@') && 
+                logintext.Text.Contains('.'))
+                {
+                    new Roster().ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("NOPE");
+                }
+        }
     }
 }
