@@ -47,6 +47,7 @@
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.sendbtn = new System.Windows.Forms.Button();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
             // 
             // codex
@@ -210,11 +211,16 @@
             this.sendbtn.Text = "Send on Mail";
             this.sendbtn.UseVisualStyleBackColor = true;
             // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
+            // 
             // Roster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 605);
+            this.ClientSize = new System.Drawing.Size(984, 606);
             this.Controls.Add(this.sendbtn);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.printbtn);
@@ -259,6 +265,7 @@
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button sendbtn;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
     }
 }
 

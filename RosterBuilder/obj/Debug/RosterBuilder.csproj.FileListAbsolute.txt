@@ -8,3 +8,4 @@ E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.Properti
 E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.csproj.GenerateResource.Cache
 E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.exe
 E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.pdb
+E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.Dashboard.resources

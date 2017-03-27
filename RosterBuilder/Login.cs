@@ -24,7 +24,7 @@ namespace RosterBuilder
                 logintext.Text.Contains('@') && 
                 logintext.Text.Contains('.'))
                 {
-                    new Roster().ShowDialog();
+                    new Dashboard().ShowDialog();
                 }
                 else
                 {
