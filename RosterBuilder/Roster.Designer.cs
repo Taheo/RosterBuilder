@@ -1,6 +1,6 @@
 ﻿namespace RosterBuilder
 {
-    partial class Roster
+    partial class RosterView
     {
         /// <summary>
         /// Required designer variable.
@@ -106,7 +106,6 @@
             this.label4.Size = new System.Drawing.Size(82, 17);
             this.label4.TabIndex = 5;
             this.label4.Text = "Model Cost:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -118,7 +117,6 @@
             this.label5.Size = new System.Drawing.Size(65, 26);
             this.label5.TabIndex = 6;
             this.label5.Text = "Total:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -216,7 +214,7 @@
             this.contextMenuStrip2.Name = "contextMenuStrip2";
             this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
             // 
-            // Roster
+            // RosterView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -238,7 +236,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.codex);
-            this.Name = "Roster";
+            this.Name = "RosterView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Roster Builder";
             this.ResumeLayout(false);

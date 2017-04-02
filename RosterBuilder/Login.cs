@@ -24,12 +24,19 @@ namespace RosterBuilder
                 logintext.Text.Contains('@') && 
                 logintext.Text.Contains('.'))
                 {
-                    new Dashboard().ShowDialog();
+                Hide();
+                new Dashboard().ShowDialog();
                 }
                 else
                 {
                     MessageBox.Show("NOPE");
                 }
+        }
+
+        private void registerbtn_Click(object sender, EventArgs e)
+        {
+            
+            new Register().ShowDialog();
         }
     }
 }

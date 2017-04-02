@@ -19,7 +19,8 @@ namespace RosterBuilder
 
         private void addnewbtn_Click(object sender, EventArgs e)
         {
-            new Roster().ShowDialog();
+            Hide();
+            new RosterView().ShowDialog();
         }
     }
 }

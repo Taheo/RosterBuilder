@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace RosterBuilder
 {
-    public partial class Roster : Form
+    public partial class RosterView : Form
     {
-        public Roster()
+        public RosterView()
         {
             InitializeComponent();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void codex_SelectedIndexChanged(object sender, EventArgs e)

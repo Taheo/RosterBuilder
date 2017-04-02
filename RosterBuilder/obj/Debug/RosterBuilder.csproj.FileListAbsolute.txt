@@ -1,10 +1,9 @@
 E:\programowanie\c#\RosterBuilder\RosterBuilder\bin\Debug\RosterBuilder.exe.config
 E:\programowanie\c#\RosterBuilder\RosterBuilder\bin\Debug\RosterBuilder.exe
 E:\programowanie\c#\RosterBuilder\RosterBuilder\bin\Debug\RosterBuilder.pdb
-E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.csprojResolveAssemblyReference.cache
 E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.Dashboard.resources
 E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.Register.resources
-E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.Roster.resources
+E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.RosterView.resources
 E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.Login.resources
 E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.Properties.Resources.resources
 E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.csproj.GenerateResource.Cache
