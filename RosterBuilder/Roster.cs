@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -50,6 +51,19 @@ namespace RosterBuilder
         private void RosterView_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void sendbtn_Click(object sender, EventArgs e)
+        {
+            MailMessage msg = new MailMessage();
+           // msg.From = "test@mail.com";
+            msg.To.Add("rec@mail.com");
+            msg.Subject = "test";
+            msg.Body = rostertext.Text;
+
+            SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+            smtp.EnableSsl = true;
+            smtp.Send(msg);
         }
     }
 }

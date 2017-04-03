@@ -14,6 +14,8 @@ namespace RosterBuilder
     public partial class Login : Form
     {
         List<User> DBusers;
+        static string validator = @"((?=.*\d)(?=.*[a - z])(?=.*[A - Z])(?=.*[@#$%]).{6,20})";
+        Regex regexinst = new Regex(validator);
         public Login()
         {
             InitializeComponent();
@@ -22,15 +24,11 @@ namespace RosterBuilder
 
         private void loginbtn_Click(object sender, EventArgs e)
         {
-            string validator = @"((?=.*\d)(?=.*[a - z])(?=.*[A - Z])(?=.*[@#$%]).{6,20})";
-           // string caption = logintext.Text;
+            
 
-            Regex regexinst = new Regex(validator);
             if (regexinst.IsMatch(logintext.Text))
             {
                 Hide();
-               // Close();
-                
                 new Dashboard().ShowDialog();
             }
             else

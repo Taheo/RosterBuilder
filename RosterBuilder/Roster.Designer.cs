@@ -38,7 +38,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.addbtn = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.rostertext = new System.Windows.Forms.TextBox();
             this.armychoice = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -138,13 +138,13 @@
             this.addbtn.UseVisualStyleBackColor = true;
             this.addbtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // rostertext
             // 
-            this.textBox2.Location = new System.Drawing.Point(272, 264);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(700, 200);
-            this.textBox2.TabIndex = 10;
+            this.rostertext.Location = new System.Drawing.Point(272, 264);
+            this.rostertext.Multiline = true;
+            this.rostertext.Name = "rostertext";
+            this.rostertext.Size = new System.Drawing.Size(700, 200);
+            this.rostertext.TabIndex = 10;
             // 
             // armychoice
             // 
@@ -208,6 +208,7 @@
             this.sendbtn.TabIndex = 17;
             this.sendbtn.Text = "Send on Mail";
             this.sendbtn.UseVisualStyleBackColor = true;
+            this.sendbtn.Click += new System.EventHandler(this.sendbtn_Click);
             // 
             // contextMenuStrip2
             // 
@@ -227,7 +228,7 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.armychoice);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.rostertext);
             this.Controls.Add(this.addbtn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -256,7 +257,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button addbtn;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox rostertext;
         private System.Windows.Forms.ComboBox armychoice;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox3;
