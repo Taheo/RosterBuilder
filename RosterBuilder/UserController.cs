@@ -8,5 +8,11 @@ namespace RosterBuilder
 {
     abstract class UserController
     {
+        void Register(User user)
+        {
+           
+        }
+        void AddToDB() { }
+
     }
 }

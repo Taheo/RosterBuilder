@@ -45,6 +45,7 @@
             this.registerbtn.TabIndex = 0;
             this.registerbtn.Text = "Sign Up";
             this.registerbtn.UseVisualStyleBackColor = true;
+            this.registerbtn.Click += new System.EventHandler(this.registerbtn_Click);
             // 
             // logintext
             // 

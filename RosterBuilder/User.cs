@@ -9,5 +9,7 @@ namespace RosterBuilder
     class User : UserController
     {
         string nickname { get; set; }
+        string password { get; set; }
+        string email { get; set; }
     }
 }

@@ -16,5 +16,10 @@ namespace RosterBuilder
         {
             InitializeComponent();
         }
+
+        private void registerbtn_Click(object sender, EventArgs e)
+        {
+            //add to db
+        }
     }
 }
