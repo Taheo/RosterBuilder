@@ -239,6 +239,7 @@
             this.Name = "RosterView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Roster Builder";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RosterView_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

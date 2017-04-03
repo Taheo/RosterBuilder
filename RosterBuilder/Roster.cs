@@ -46,5 +46,10 @@ namespace RosterBuilder
         {
             
         }
+
+        private void RosterView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

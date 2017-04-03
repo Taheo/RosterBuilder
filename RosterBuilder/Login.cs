@@ -17,18 +17,20 @@ namespace RosterBuilder
         public Login()
         {
             InitializeComponent();
+            GC.Collect();
         }
 
         private void loginbtn_Click(object sender, EventArgs e)
         {
-
             string validator = @"((?=.*\d)(?=.*[a - z])(?=.*[A - Z])(?=.*[@#$%]).{6,20})";
-            string s = logintext.Text;
+           // string caption = logintext.Text;
 
             Regex regexinst = new Regex(validator);
-            if (regexinst.IsMatch(s))
+            if (regexinst.IsMatch(logintext.Text))
             {
                 Hide();
+               // Close();
+                
                 new Dashboard().ShowDialog();
             }
             else
@@ -45,6 +47,11 @@ namespace RosterBuilder
         private void Login_Load(object sender, EventArgs e)
         {
            
+        }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

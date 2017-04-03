@@ -21,5 +21,10 @@ namespace RosterBuilder
         {
             //add to db
         }
+
+        private void Register_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
