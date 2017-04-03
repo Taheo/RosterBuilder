@@ -21,19 +21,20 @@ namespace RosterBuilder
 
         private void loginbtn_Click(object sender, EventArgs e)
         {
-           
-                if (logintext.Text == "" && 
-                logintext.Text.Contains('@') && 
-                logintext.Text.Contains('.') && 
-                passwordtext.Text !="")
-                {
+
+            string validator = @"((?=.*\d)(?=.*[a - z])(?=.*[A - Z])(?=.*[@#$%]).{6,20})";
+            string s = logintext.Text;
+
+            Regex regexinst = new Regex(validator);
+            if (regexinst.IsMatch(s))
+            {
                 Hide();
                 new Dashboard().ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("NOPE");
-                }
+            }
+            else
+            {
+                MessageBox.Show("NOPE");
+            }
         }
 
         private void registerbtn_Click(object sender, EventArgs e)
@@ -43,13 +44,7 @@ namespace RosterBuilder
 
         private void Login_Load(object sender, EventArgs e)
         {
-            string p = @"((?=.*\d)(?=.*[a - z])(?=.*[A - Z])(?=.*[@#$%]).{6,20})";
-            string s = logintext.Text;
-            Regex r = new Regex(p);
-            if (r.IsMatch(s))
-            {
-
-            }
+           
         }
     }
 }

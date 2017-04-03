@@ -21,3 +21,4 @@ E:\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.RosterView.resources
 E:\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.Login.resources
 E:\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.Properties.Resources.resources
 E:\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.csproj.GenerateResource.Cache
+E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.csprojResolveAssemblyReference.cache
