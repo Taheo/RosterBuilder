@@ -6,13 +6,7 @@ using System.Threading.Tasks;
 
 namespace RosterBuilder
 {
-    abstract class UserController
+    class RosterController
     {
-        void Register(User user)
-        {
-
-        }
-        void AddToDB() { }
-
     }
 }
