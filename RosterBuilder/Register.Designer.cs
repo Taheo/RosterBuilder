@@ -35,11 +35,13 @@
             this.reglogin = new System.Windows.Forms.Label();
             this.regpass = new System.Windows.Forms.Label();
             this.regnick = new System.Windows.Forms.Label();
+            this.emailtext = new System.Windows.Forms.TextBox();
+            this.regemail = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // registerbtn
             // 
-            this.registerbtn.Location = new System.Drawing.Point(210, 273);
+            this.registerbtn.Location = new System.Drawing.Point(208, 302);
             this.registerbtn.Name = "registerbtn";
             this.registerbtn.Size = new System.Drawing.Size(100, 55);
             this.registerbtn.TabIndex = 0;
@@ -95,12 +97,30 @@
             this.regnick.TabIndex = 9;
             this.regnick.Text = "Nickname";
             // 
+            // emailtext
+            // 
+            this.emailtext.Location = new System.Drawing.Point(156, 273);
+            this.emailtext.Name = "emailtext";
+            this.emailtext.Size = new System.Drawing.Size(200, 20);
+            this.emailtext.TabIndex = 10;
+            // 
+            // regemail
+            // 
+            this.regemail.AutoSize = true;
+            this.regemail.Location = new System.Drawing.Point(90, 280);
+            this.regemail.Name = "regemail";
+            this.regemail.Size = new System.Drawing.Size(32, 13);
+            this.regemail.TabIndex = 11;
+            this.regemail.Text = "Email";
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(504, 481);
+            this.Controls.Add(this.regemail);
+            this.Controls.Add(this.emailtext);
             this.Controls.Add(this.regnick);
             this.Controls.Add(this.regpass);
             this.Controls.Add(this.reglogin);
@@ -125,5 +145,7 @@
         private System.Windows.Forms.Label reglogin;
         private System.Windows.Forms.Label regpass;
         private System.Windows.Forms.Label regnick;
+        private System.Windows.Forms.TextBox emailtext;
+        private System.Windows.Forms.Label regemail;
     }
 }

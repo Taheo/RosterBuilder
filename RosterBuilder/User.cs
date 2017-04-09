@@ -8,8 +8,18 @@ namespace RosterBuilder
 {
     class User : UserController
     {
-        string nickname { get; set; }
-        string password { get; set; }
-        string email { get; set; }
+        int IDuser;
+       private string Username;
+       private string Password;
+       private string Email;
+
+        public User() { }
+
+        public int id
+        {
+            get {return IDuser ;}
+            set {IDuser = value ;}
+        }
+
     }
 }
