@@ -43,10 +43,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.savebtn = new System.Windows.Forms.Button();
-            this.printbtn = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.sendbtn = new System.Windows.Forms.Button();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
             // 
@@ -136,7 +134,6 @@
             this.addbtn.TabIndex = 9;
             this.addbtn.Text = "Add";
             this.addbtn.UseVisualStyleBackColor = true;
-            this.addbtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // rostertext
             // 
@@ -177,21 +174,12 @@
             // 
             // savebtn
             // 
-            this.savebtn.Location = new System.Drawing.Point(507, 470);
+            this.savebtn.Location = new System.Drawing.Point(433, 477);
             this.savebtn.Name = "savebtn";
             this.savebtn.Size = new System.Drawing.Size(90, 55);
             this.savebtn.TabIndex = 14;
             this.savebtn.Text = "Save";
             this.savebtn.UseVisualStyleBackColor = true;
-            // 
-            // printbtn
-            // 
-            this.printbtn.Location = new System.Drawing.Point(603, 470);
-            this.printbtn.Name = "printbtn";
-            this.printbtn.Size = new System.Drawing.Size(90, 55);
-            this.printbtn.TabIndex = 15;
-            this.printbtn.Text = "Print";
-            this.printbtn.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
@@ -199,16 +187,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(80, 20);
             this.textBox4.TabIndex = 16;
-            // 
-            // sendbtn
-            // 
-            this.sendbtn.Location = new System.Drawing.Point(699, 470);
-            this.sendbtn.Name = "sendbtn";
-            this.sendbtn.Size = new System.Drawing.Size(90, 55);
-            this.sendbtn.TabIndex = 17;
-            this.sendbtn.Text = "Send on Mail";
-            this.sendbtn.UseVisualStyleBackColor = true;
-            this.sendbtn.Click += new System.EventHandler(this.sendbtn_Click);
             // 
             // contextMenuStrip2
             // 
@@ -221,9 +199,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(984, 606);
-            this.Controls.Add(this.sendbtn);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.printbtn);
             this.Controls.Add(this.savebtn);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label7);
@@ -262,10 +238,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button savebtn;
-        private System.Windows.Forms.Button printbtn;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button sendbtn;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
     }
 }
