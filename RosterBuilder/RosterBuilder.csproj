@@ -67,6 +67,7 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="dbcontroller.cs" />
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
     </Compile>

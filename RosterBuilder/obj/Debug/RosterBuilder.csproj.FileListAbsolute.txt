@@ -22,3 +22,16 @@ E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.csproj.G
 E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.exe
 E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.pdb
 E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.csprojResolveAssemblyReference.cache
+F:\RosterBuilder\RosterBuilder\bin\Debug\RosterBuilder.exe
+F:\RosterBuilder\RosterBuilder\bin\Debug\db.mdf
+F:\RosterBuilder\RosterBuilder\bin\Debug\db_log.ldf
+F:\RosterBuilder\RosterBuilder\bin\Debug\RosterBuilder.exe.config
+F:\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.Dashboard.resources
+F:\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.Register.resources
+F:\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.RosterView.resources
+F:\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.Login.resources
+F:\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.Properties.Resources.resources
+F:\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.csproj.GenerateResource.Cache
+F:\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.exe
+F:\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.pdb
+F:\RosterBuilder\RosterBuilder\bin\Debug\RosterBuilder.pdb
