@@ -19,10 +19,11 @@ namespace RosterBuilder
 
         private void registerbtn_Click(object sender, EventArgs e)
         {
-            dbcontroller.AddUser(logintext.Text, passwordtext.Text, emailtext.Text);
+            dbcontroller.AddUser(logintext.Text, emailtext.Text, passwordtext.Text);
             logintext.Text = "";
-            passwordtext.Text = "";
             emailtext.Text = "";
+            passwordtext.Text = "";
+            
         }
 
         private void Register_FormClosing(object sender, FormClosingEventArgs e)
