@@ -13,8 +13,7 @@ namespace RosterBuilder
 {
     public partial class Login : Form
     {
-        List<User> DBusers;
-        public Login()
+           public Login()
         {
             InitializeComponent();
             GC.Collect();

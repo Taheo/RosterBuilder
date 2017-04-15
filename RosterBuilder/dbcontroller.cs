@@ -16,13 +16,14 @@ namespace RosterBuilder
             SqlConnection conn = new SqlConnection(connStr);
             return conn;
         }
-        public static void AddPlayer(string _username, string _password)
+        public static void AddUser(string _username, string _password, string _email)
         {
-            string insStmt = "INSERT INTO User (Username, Password) VALUES (@username, @password)";
+            string insStmt = "INSERT INTO User (Username, Password) VALUES (@username, @password, @email)";
             SqlConnection conn = GetConnection();
             SqlCommand insCmd = new SqlCommand(insStmt, conn);
             insCmd.Parameters.AddWithValue("@username", _username);
             insCmd.Parameters.AddWithValue("@password", _password);
+            insCmd.Parameters.AddWithValue("@email", _email);
 
             try { conn.Open(); insCmd.ExecuteNonQuery(); }
             catch (SqlException ex) { throw ex; }
@@ -31,8 +32,9 @@ namespace RosterBuilder
         public static List<User> GetUser()
         {
             List<User> UserList = new List<User>();
+
             SqlConnection conn = GetConnection();
-            string selStmt = "SELECT * FROM Player ORDER BY PlayerName";
+            string selStmt = "SELECT * FROM User ORDER BY Username";
             SqlCommand selCmd = new SqlCommand(selStmt, conn);
             try
             {
@@ -41,11 +43,10 @@ namespace RosterBuilder
                 while (reader.Read())
                 {
                     User user = new User();
-                    //player.PlayerId = (int)reader["PlayerId"];
-                    //player.PlayerName = reader["PlayerName"].ToString();
-                    //player.PlayerPassword = reader["Password"].ToString();
-                    //player.PlayerCash = (int)reader["PlayerCash"];
-                    //player.PlayerTokens = (int)reader["PlayerTokens"];
+                    user.id = (int)reader["IDuser"];
+                    user.username = reader["Username"].ToString();
+                    user.email = reader["Email"].ToString();
+                    user.password = reader["Password"].ToString();
                     UserList.Add(user);
                 }
                 reader.Close();

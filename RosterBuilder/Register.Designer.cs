@@ -29,12 +29,10 @@
         private void InitializeComponent()
         {
             this.registerbtn = new System.Windows.Forms.Button();
+            this.passwordtext = new System.Windows.Forms.TextBox();
             this.logintext = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.reglogin = new System.Windows.Forms.Label();
             this.regpass = new System.Windows.Forms.Label();
-            this.regnick = new System.Windows.Forms.Label();
             this.emailtext = new System.Windows.Forms.TextBox();
             this.regemail = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -49,26 +47,19 @@
             this.registerbtn.UseVisualStyleBackColor = true;
             this.registerbtn.Click += new System.EventHandler(this.registerbtn_Click);
             // 
+            // passwordtext
+            // 
+            this.passwordtext.Location = new System.Drawing.Point(156, 221);
+            this.passwordtext.Name = "passwordtext";
+            this.passwordtext.Size = new System.Drawing.Size(200, 20);
+            this.passwordtext.TabIndex = 5;
+            // 
             // logintext
             // 
-            this.logintext.Location = new System.Drawing.Point(156, 247);
+            this.logintext.Location = new System.Drawing.Point(156, 195);
             this.logintext.Name = "logintext";
             this.logintext.Size = new System.Drawing.Size(200, 20);
-            this.logintext.TabIndex = 4;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(156, 221);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 5;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(156, 195);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 20);
-            this.textBox2.TabIndex = 6;
+            this.logintext.TabIndex = 6;
             // 
             // reglogin
             // 
@@ -88,18 +79,9 @@
             this.regpass.TabIndex = 8;
             this.regpass.Text = "Password";
             // 
-            // regnick
-            // 
-            this.regnick.AutoSize = true;
-            this.regnick.Location = new System.Drawing.Point(90, 254);
-            this.regnick.Name = "regnick";
-            this.regnick.Size = new System.Drawing.Size(55, 13);
-            this.regnick.TabIndex = 9;
-            this.regnick.Text = "Nickname";
-            // 
             // emailtext
             // 
-            this.emailtext.Location = new System.Drawing.Point(156, 273);
+            this.emailtext.Location = new System.Drawing.Point(156, 247);
             this.emailtext.Name = "emailtext";
             this.emailtext.Size = new System.Drawing.Size(200, 20);
             this.emailtext.TabIndex = 10;
@@ -107,7 +89,7 @@
             // regemail
             // 
             this.regemail.AutoSize = true;
-            this.regemail.Location = new System.Drawing.Point(90, 280);
+            this.regemail.Location = new System.Drawing.Point(90, 252);
             this.regemail.Name = "regemail";
             this.regemail.Size = new System.Drawing.Size(32, 13);
             this.regemail.TabIndex = 11;
@@ -121,12 +103,10 @@
             this.ClientSize = new System.Drawing.Size(504, 481);
             this.Controls.Add(this.regemail);
             this.Controls.Add(this.emailtext);
-            this.Controls.Add(this.regnick);
             this.Controls.Add(this.regpass);
             this.Controls.Add(this.reglogin);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.logintext);
+            this.Controls.Add(this.passwordtext);
             this.Controls.Add(this.registerbtn);
             this.Name = "Register";
             this.Text = "Register";
@@ -139,12 +119,10 @@
         #endregion
 
         private System.Windows.Forms.Button registerbtn;
+        private System.Windows.Forms.TextBox passwordtext;
         private System.Windows.Forms.TextBox logintext;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label reglogin;
         private System.Windows.Forms.Label regpass;
-        private System.Windows.Forms.Label regnick;
         private System.Windows.Forms.TextBox emailtext;
         private System.Windows.Forms.Label regemail;
     }
