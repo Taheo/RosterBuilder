@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RosterBuilder
 {
-    class User : UserController
+    public class User : UserController
     {
        int IDuser;
        private string Username;

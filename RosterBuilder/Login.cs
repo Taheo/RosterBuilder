@@ -33,8 +33,9 @@ namespace RosterBuilder
                 hasSymbols.IsMatch(logintext.Text)
                 )
             {
-                Close();
+                Hide();
                 new Dashboard().ShowDialog();
+                Close();
             }
             else
             {
@@ -56,5 +57,6 @@ namespace RosterBuilder
         {
             Application.Exit();
         }
+
     }
 }

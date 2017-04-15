@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RosterBuilder
 {
-    abstract class UserController
+    public abstract class UserController
     {
         void Register(User user)
         {

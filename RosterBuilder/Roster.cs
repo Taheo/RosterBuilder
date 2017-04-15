@@ -49,15 +49,16 @@ namespace RosterBuilder
 
         private void RosterView_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //Application.Exit();
-            Close();
+            Application.Exit();
+            //Close();
         }
 
         private void backbtn_Click(object sender, EventArgs e)
         {
-            Close();
+            Hide();
             GC.Collect();
             new Dashboard().ShowDialog();
+            Close();
         }
     }
 }
