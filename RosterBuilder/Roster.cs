@@ -21,8 +21,13 @@ namespace RosterBuilder
 
         private void codex_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+
+
+
                 switch ((string)armychoice.SelectedItem)
                 {
+
                 case "Empire":
                     codex.Clear();
                     codex.AppendText("Knight");
