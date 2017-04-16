@@ -89,6 +89,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RosterController.cs" />
+    <Compile Include="Unit.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserController.cs" />
     <EmbeddedResource Include="Dashboard.resx">

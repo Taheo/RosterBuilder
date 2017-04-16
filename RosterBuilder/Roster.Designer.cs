@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.codex = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,24 +37,20 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.addbtn = new System.Windows.Forms.Button();
-            this.rostertext = new System.Windows.Forms.TextBox();
-            this.armychoice = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.savebtn = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.backbtn = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
-            // 
-            // codex
-            // 
-            this.codex.Location = new System.Drawing.Point(272, 12);
-            this.codex.Multiline = true;
-            this.codex.Name = "codex";
-            this.codex.Size = new System.Drawing.Size(700, 200);
-            this.codex.TabIndex = 0;
             // 
             // contextMenuStrip1
             // 
@@ -66,7 +61,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(34, 239);
+            this.label1.Location = new System.Drawing.Point(14, 257);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 20, 5, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 17);
@@ -77,7 +72,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(34, 265);
+            this.label2.Location = new System.Drawing.Point(14, 283);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 20, 5, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 17);
@@ -88,7 +83,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(34, 324);
+            this.label3.Location = new System.Drawing.Point(28, 478);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 20, 5, 20);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 17);
@@ -99,7 +94,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(34, 296);
+            this.label4.Location = new System.Drawing.Point(14, 314);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 20, 5, 20);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 17);
@@ -131,44 +126,15 @@
             // 
             this.addbtn.Location = new System.Drawing.Point(37, 364);
             this.addbtn.Name = "addbtn";
-            this.addbtn.Size = new System.Drawing.Size(75, 30);
+            this.addbtn.Size = new System.Drawing.Size(79, 30);
             this.addbtn.TabIndex = 9;
-            this.addbtn.Text = "Add";
+            this.addbtn.Text = "Add To Army";
             this.addbtn.UseVisualStyleBackColor = true;
-            // 
-            // rostertext
-            // 
-            this.rostertext.Location = new System.Drawing.Point(272, 264);
-            this.rostertext.Multiline = true;
-            this.rostertext.Name = "rostertext";
-            this.rostertext.Size = new System.Drawing.Size(700, 200);
-            this.rostertext.TabIndex = 10;
-            // 
-            // armychoice
-            // 
-            this.armychoice.FormattingEnabled = true;
-            this.armychoice.Items.AddRange(new object[] {
-            "Empire",
-            "Chaos",
-            "Elves"});
-            this.armychoice.Location = new System.Drawing.Point(103, 12);
-            this.armychoice.Name = "armychoice";
-            this.armychoice.Size = new System.Drawing.Size(152, 21);
-            this.armychoice.TabIndex = 11;
-            this.armychoice.SelectedIndexChanged += new System.EventHandler(this.codex_SelectedIndexChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(53, 12);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(30, 13);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Army";
+            this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(77, 323);
+            this.textBox3.Location = new System.Drawing.Point(71, 477);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(80, 20);
             this.textBox3.TabIndex = 13;
@@ -204,19 +170,69 @@
             this.backbtn.UseVisualStyleBackColor = true;
             this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(77, 258);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(115, 20);
+            this.textBox1.TabIndex = 18;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(77, 280);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(115, 20);
+            this.textBox2.TabIndex = 19;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(92, 311);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 20;
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.listView1.Location = new System.Drawing.Point(263, 21);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(663, 197);
+            this.listView1.TabIndex = 21;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Unit Name";
+            this.columnHeader1.Width = 133;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Unit Type";
+            this.columnHeader2.Width = 204;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Cost";
+            this.columnHeader3.Width = 303;
+            // 
             // RosterView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(984, 606);
+            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.backbtn);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.savebtn);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.armychoice);
-            this.Controls.Add(this.rostertext);
             this.Controls.Add(this.addbtn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -224,7 +240,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.codex);
             this.Name = "RosterView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Roster Builder";
@@ -235,8 +250,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox codex;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -245,15 +258,19 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button addbtn;
-        private System.Windows.Forms.TextBox rostertext;
-        private System.Windows.Forms.ComboBox armychoice;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button savebtn;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.Button backbtn;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }
 

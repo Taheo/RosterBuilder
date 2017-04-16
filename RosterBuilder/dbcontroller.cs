@@ -29,6 +29,22 @@ namespace RosterBuilder
             catch (SqlException ex) { throw ex; }
             finally { conn.Close(); }
         }
+
+        public static void AddUnit(string _unitname, string _unittype, int _cost)
+        {
+            string insStmt = "INSERT INTO [Unit] (UnitName, UnitType, CostPerModel) VALUES (@unitname, @unittype, @cost)";
+            SqlConnection conn = GetConnection();
+            SqlCommand insCmd = new SqlCommand(insStmt, conn);
+            insCmd.Parameters.AddWithValue("@unitname", _unitname);
+            insCmd.Parameters.AddWithValue("@unittype", _unittype);
+            insCmd.Parameters.AddWithValue("@cost", _cost);
+
+            try { conn.Open(); insCmd.ExecuteNonQuery(); }
+            catch (SqlException ex) { throw ex; }
+            finally { conn.Close(); }
+        }
+
+
         public static List<User> GetUser()
         {
             List<User> UserList = new List<User>();
@@ -55,6 +71,33 @@ namespace RosterBuilder
             finally { conn.Close(); }
             return UserList;
         }
+
+        public static List<Unit> GetUnit()
+        {
+            List<Unit> UnitList = new List<Unit>();
+
+            SqlConnection conn = GetConnection();
+            string selStmt = "SELECT UnitName, UnitType, CostPerModel FROM Unit ORDER BY Username";
+            SqlCommand selCmd = new SqlCommand(selStmt, conn);
+            try
+            {
+                conn.Open();
+                SqlDataReader reader = selCmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Unit unit = new Unit();
+                    //unit.id = (int)reader["id"];
+                    unit.getUnitName = reader["UnitName"].ToString();
+                    unit.getUnitType = reader["UnitType"].ToString();
+                    unit.getUnitCost = (int)reader["CostPerModel"];
+                    UnitList.Add(unit);
+                }
+                reader.Close();
+            }
+            catch (SqlException ex) { throw ex; }
+            finally { conn.Close(); }
+            return UnitList;
+        }
         //public static bool LoginPlayer(string playerName, string password)
         //{
         //    SqlConnection conn = GetConnection();
@@ -72,7 +115,7 @@ namespace RosterBuilder
 
         //}
 
-       
+
 
     }
 }
