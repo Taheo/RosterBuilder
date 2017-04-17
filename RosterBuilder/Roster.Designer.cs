@@ -197,27 +197,24 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
-            this.listView1.Location = new System.Drawing.Point(263, 21);
+            this.listView1.Location = new System.Drawing.Point(181, 14);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(663, 197);
+            this.listView1.Size = new System.Drawing.Size(751, 198);
             this.listView1.TabIndex = 21;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Unit Name";
-            this.columnHeader1.Width = 133;
+            this.columnHeader1.Text = "Unit Nick";
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Unit Type";
-            this.columnHeader2.Width = 204;
+            this.columnHeader2.Text = "Type";
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Cost";
-            this.columnHeader3.Width = 303;
             // 
             // RosterView
             // 
@@ -244,6 +241,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Roster Builder";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RosterView_FormClosing);
+            this.Load += new System.EventHandler(this.RosterView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

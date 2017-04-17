@@ -32,7 +32,7 @@ namespace RosterBuilder
 
         public static void AddUnit(string _unitname, string _unittype, int _cost)
         {
-            string insStmt = "INSERT INTO [Unit] (UnitName, UnitType, CostPerModel) VALUES (@unitname, @unittype, @cost)";
+            string insStmt = "INSERT INTO Unit (UnitName, UnitType, CostPerModel) VALUES (@unitname, @unittype, @cost)";
             SqlConnection conn = GetConnection();
             SqlCommand insCmd = new SqlCommand(insStmt, conn);
             insCmd.Parameters.AddWithValue("@unitname", _unitname);
@@ -77,7 +77,7 @@ namespace RosterBuilder
             List<Unit> UnitList = new List<Unit>();
 
             SqlConnection conn = GetConnection();
-            string selStmt = "SELECT UnitName, UnitType, CostPerModel FROM Unit ORDER BY Username";
+            string selStmt = "SELECT * FROM Unit ORDER BY Id";
             SqlCommand selCmd = new SqlCommand(selStmt, conn);
             try
             {
@@ -87,9 +87,11 @@ namespace RosterBuilder
                 {
                     Unit unit = new Unit();
                     //unit.id = (int)reader["id"];
+                    unit.getID = (int)reader["Id"];
                     unit.getUnitName = reader["UnitName"].ToString();
                     unit.getUnitType = reader["UnitType"].ToString();
                     unit.getUnitCost = (int)reader["CostPerModel"];
+                    unit.getID = (int)reader["Id"];
                     UnitList.Add(unit);
                 }
                 reader.Close();

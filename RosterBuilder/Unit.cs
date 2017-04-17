@@ -11,6 +11,7 @@ namespace RosterBuilder
         private string unitname;
         private string unittype;
         private int cost;
+        private int id;
 
         public Unit() { }
 
@@ -30,6 +31,12 @@ namespace RosterBuilder
         {
             get { return cost; }
             set { cost = value; }
+        }
+
+        public int getID
+        {
+            get { return id; }
+            set { id = value; }
         }
     }
 }
