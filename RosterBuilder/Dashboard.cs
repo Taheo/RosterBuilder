@@ -20,7 +20,13 @@ namespace RosterBuilder
         private void addnewbtn_Click(object sender, EventArgs e)
         {
             Hide();
-            new RosterView().ShowDialog();
+            DisplayController.ShowRoster();
+            Close();
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+           // nicklabel.Text = 
         }
     }
 }

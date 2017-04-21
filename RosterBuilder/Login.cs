@@ -13,10 +13,10 @@ namespace RosterBuilder
 {
     public partial class Login : Form
     {
+        //var currentuser = 
            public Login()
         {
             InitializeComponent();
-            GC.Collect();
         }
 
         private void loginbtn_Click(object sender, EventArgs e)
@@ -33,7 +33,7 @@ namespace RosterBuilder
                 )
             {
                 Hide();
-                new Dashboard().ShowDialog();
+                DisplayController.ShowDashboard();
                 Close();
             }
             else
@@ -44,7 +44,9 @@ namespace RosterBuilder
 
         private void registerbtn_Click(object sender, EventArgs e)
         {
-            new Register().ShowDialog();
+            Hide();
+            DisplayController.ShowRegister();
+            Close();
         }
 
 

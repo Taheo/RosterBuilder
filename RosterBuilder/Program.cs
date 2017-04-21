@@ -16,7 +16,7 @@ namespace RosterBuilder
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RosterView());
+            Application.Run(new Login());
         }
     }
 }
