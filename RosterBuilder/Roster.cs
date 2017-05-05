@@ -79,5 +79,13 @@ namespace RosterBuilder
                 MessageBox.Show(ex.Message, ex.GetType().ToString());
             }
         }
+
+        private void countbtn_Click(object sender, EventArgs e)
+        {
+            var sum = this.LV1.Items
+              .Cast<ListViewItem>()
+              .Sum(item => int.Parse(item.SubItems[2].Text));
+            totalbox.Text = sum.ToString();
+        }
     }
 }

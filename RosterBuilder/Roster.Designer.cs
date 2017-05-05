@@ -52,6 +52,7 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.countbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -125,7 +126,7 @@
             // 
             // savebtn
             // 
-            this.savebtn.Location = new System.Drawing.Point(433, 477);
+            this.savebtn.Location = new System.Drawing.Point(564, 477);
             this.savebtn.Name = "savebtn";
             this.savebtn.Size = new System.Drawing.Size(90, 55);
             this.savebtn.TabIndex = 14;
@@ -146,7 +147,7 @@
             // 
             // backbtn
             // 
-            this.backbtn.Location = new System.Drawing.Point(529, 477);
+            this.backbtn.Location = new System.Drawing.Point(882, 477);
             this.backbtn.Name = "backbtn";
             this.backbtn.Size = new System.Drawing.Size(90, 55);
             this.backbtn.TabIndex = 17;
@@ -225,12 +226,23 @@
             // 
             this.columnHeader6.Text = "Cost";
             // 
+            // countbtn
+            // 
+            this.countbtn.Location = new System.Drawing.Point(468, 477);
+            this.countbtn.Name = "countbtn";
+            this.countbtn.Size = new System.Drawing.Size(90, 55);
+            this.countbtn.TabIndex = 23;
+            this.countbtn.Text = "Count";
+            this.countbtn.UseVisualStyleBackColor = true;
+            this.countbtn.Click += new System.EventHandler(this.countbtn_Click);
+            // 
             // RosterView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(984, 606);
+            this.Controls.Add(this.countbtn);
             this.Controls.Add(this.LV2);
             this.Controls.Add(this.LV1);
             this.Controls.Add(this.modelcostbox);
@@ -279,6 +291,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.Button countbtn;
     }
 }
 
