@@ -12,13 +12,13 @@ namespace RosterBuilder
         public static SqlConnection GetConnection()
         {
             //    string connstr = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = F:\RosterBuilder\RosterBuilder\db.mdf; Integrated Security = True";
-            string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\programowanie\c#\RosterBuilder\RosterBuilder\db.mdf;Integrated Security=True";
+            string connStr = @"data source=DESKTOP-NN2FSE0\INSTANCJA;initial catalog=RosterDB;trusted_connection=true";
             SqlConnection conn = new SqlConnection(connStr);
             return conn;
         }
         public static void AddUser(string _username, string _password, string _email)
         {
-            string insStmt = "INSERT INTO [User] (Username, Email, Password) VALUES (@username, @email, @password)";
+            string insStmt = "INSERT INTO [UserTable] (Username, Email, Password) VALUES (@username, @email, @password)";
             SqlConnection conn = GetConnection();
             SqlCommand insCmd = new SqlCommand(insStmt, conn);
             insCmd.Parameters.AddWithValue("@username", _username);
@@ -50,7 +50,7 @@ namespace RosterBuilder
             List<User> UserList = new List<User>();
 
             SqlConnection conn = GetConnection();
-            string selStmt = "SELECT * FROM User ORDER BY Username";
+            string selStmt = "SELECT * FROM UserTable ORDER BY Username";
             SqlCommand selCmd = new SqlCommand(selStmt, conn);
             try
             {
@@ -100,22 +100,24 @@ namespace RosterBuilder
             finally { conn.Close(); }
             return UnitList;
         }
-        //public static bool LoginPlayer(string playerName, string password)
-        //{
-        //    SqlConnection conn = GetConnection();
-        //    SqlDataAdapter selStmt = new SqlDataAdapter("SELECT * FROM Player WHERE PlayerName = '" + playerName + "' AND Password = '" + password + "'", conn);
-        //    DataTable dt = new System.Data.DataTable();
-        //    selStmt.Fill(dt);
-        //    if (dt.Rows.Count == 1)
-        //    {
-        //        return true;
-        //    }
-        //    else
-        //    {
-        //        return false;
-        //    }
 
-        //}
+
+        public static bool LoginUser(string playerName, string password)
+        {
+            SqlConnection conn = GetConnection();
+            SqlDataAdapter selStmt = new SqlDataAdapter("SELECT * FROM Us WHERE PlayerName = '" + playerName + "' AND Password = '" + password + "'", conn);
+            DataTable dt = new System.Data.DataTable();
+            selStmt.Fill(dt);
+            if (dt.Rows.Count == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
 
 
 

@@ -34,6 +34,4 @@ F:\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.csproj.GenerateResource.C
 F:\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.exe
 F:\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.pdb
 F:\RosterBuilder\RosterBuilder\bin\Debug\RosterBuilder.pdb
-E:\programowanie\c#\RosterBuilder\RosterBuilder\bin\Debug\db.mdf
-E:\programowanie\c#\RosterBuilder\RosterBuilder\bin\Debug\db_log.ldf
 E:\programowanie\c#\RosterBuilder\RosterBuilder\obj\Debug\RosterBuilder.csprojResolveAssemblyReference.cache
