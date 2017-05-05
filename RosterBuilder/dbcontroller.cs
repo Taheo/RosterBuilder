@@ -86,12 +86,10 @@ namespace RosterBuilder
                 while (reader.Read())
                 {
                     Unit unit = new Unit();
-                    //unit.id = (int)reader["id"];
                     unit.getID = (int)reader["Id"];
                     unit.getUnitName = reader["UnitName"].ToString();
                     unit.getUnitType = reader["UnitType"].ToString();
                     unit.getUnitCost = (int)reader["CostPerModel"];
-                    unit.getID = (int)reader["Id"];
                     UnitList.Add(unit);
                 }
                 reader.Close();
@@ -102,10 +100,10 @@ namespace RosterBuilder
         }
 
 
-        public static bool LoginUser(string playerName, string password)
+        public static bool LoginUser(string _username, string _password)
         {
             SqlConnection conn = GetConnection();
-            SqlDataAdapter selStmt = new SqlDataAdapter("SELECT * FROM Us WHERE PlayerName = '" + playerName + "' AND Password = '" + password + "'", conn);
+            SqlDataAdapter selStmt = new SqlDataAdapter("SELECT Username, Password FROM UserTable WHERE Username = '" + _username + "' AND Password = '" + _password + "'", conn);
             DataTable dt = new System.Data.DataTable();
             selStmt.Fill(dt);
             if (dt.Rows.Count == 1)

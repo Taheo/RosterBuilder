@@ -32,24 +32,26 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.addbtn = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.savebtn = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.totalbox = new System.Windows.Forms.TextBox();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.backbtn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.unitnamebox = new System.Windows.Forms.TextBox();
+            this.unittypebox = new System.Windows.Forms.TextBox();
+            this.modelcostbox = new System.Windows.Forms.TextBox();
+            this.LV1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.LV2 = new System.Windows.Forms.ListView();
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -79,17 +81,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Type:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(28, 478);
-            this.label3.Margin = new System.Windows.Forms.Padding(5, 20, 5, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 17);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Size";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -116,7 +107,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(269, 230);
+            this.label6.Location = new System.Drawing.Point(218, 243);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(50, 17);
             this.label6.TabIndex = 8;
@@ -132,13 +123,6 @@
             this.addbtn.UseVisualStyleBackColor = true;
             this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(71, 477);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(80, 20);
-            this.textBox3.TabIndex = 13;
-            // 
             // savebtn
             // 
             this.savebtn.Location = new System.Drawing.Point(433, 477);
@@ -148,12 +132,12 @@
             this.savebtn.Text = "Save";
             this.savebtn.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // totalbox
             // 
-            this.textBox4.Location = new System.Drawing.Point(330, 495);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(80, 20);
-            this.textBox4.TabIndex = 16;
+            this.totalbox.Location = new System.Drawing.Point(330, 495);
+            this.totalbox.Name = "totalbox";
+            this.totalbox.Size = new System.Drawing.Size(80, 20);
+            this.totalbox.TabIndex = 16;
             // 
             // contextMenuStrip2
             // 
@@ -170,39 +154,39 @@
             this.backbtn.UseVisualStyleBackColor = true;
             this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
-            // textBox1
+            // unitnamebox
             // 
-            this.textBox1.Location = new System.Drawing.Point(77, 258);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(115, 20);
-            this.textBox1.TabIndex = 18;
+            this.unitnamebox.Location = new System.Drawing.Point(77, 258);
+            this.unitnamebox.Name = "unitnamebox";
+            this.unitnamebox.Size = new System.Drawing.Size(115, 20);
+            this.unitnamebox.TabIndex = 18;
             // 
-            // textBox2
+            // unittypebox
             // 
-            this.textBox2.Location = new System.Drawing.Point(77, 280);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(115, 20);
-            this.textBox2.TabIndex = 19;
+            this.unittypebox.Location = new System.Drawing.Point(77, 280);
+            this.unittypebox.Name = "unittypebox";
+            this.unittypebox.Size = new System.Drawing.Size(115, 20);
+            this.unittypebox.TabIndex = 19;
             // 
-            // textBox5
+            // modelcostbox
             // 
-            this.textBox5.Location = new System.Drawing.Point(92, 311);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 20;
+            this.modelcostbox.Location = new System.Drawing.Point(92, 311);
+            this.modelcostbox.Name = "modelcostbox";
+            this.modelcostbox.Size = new System.Drawing.Size(100, 20);
+            this.modelcostbox.TabIndex = 20;
             // 
-            // listView1
+            // LV1
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.LV1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
-            this.listView1.Location = new System.Drawing.Point(181, 14);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(751, 198);
-            this.listView1.TabIndex = 21;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.LV1.Location = new System.Drawing.Point(221, 29);
+            this.LV1.Name = "LV1";
+            this.LV1.Size = new System.Drawing.Size(751, 198);
+            this.LV1.TabIndex = 21;
+            this.LV1.UseCompatibleStateImageBehavior = false;
+            this.LV1.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
@@ -216,25 +200,49 @@
             // 
             this.columnHeader3.Text = "Cost";
             // 
+            // LV2
+            // 
+            this.LV2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6});
+            this.LV2.Location = new System.Drawing.Point(221, 273);
+            this.LV2.Name = "LV2";
+            this.LV2.Size = new System.Drawing.Size(751, 198);
+            this.LV2.TabIndex = 22;
+            this.LV2.UseCompatibleStateImageBehavior = false;
+            this.LV2.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Unit Nick";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Type";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Cost";
+            // 
             // RosterView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(984, 606);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.LV2);
+            this.Controls.Add(this.LV1);
+            this.Controls.Add(this.modelcostbox);
+            this.Controls.Add(this.unittypebox);
+            this.Controls.Add(this.unitnamebox);
             this.Controls.Add(this.backbtn);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.totalbox);
             this.Controls.Add(this.savebtn);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.addbtn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "RosterView";
@@ -251,24 +259,26 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button addbtn;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button savebtn;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox totalbox;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.Button backbtn;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.TextBox unitnamebox;
+        private System.Windows.Forms.TextBox unittypebox;
+        private System.Windows.Forms.TextBox modelcostbox;
+        private System.Windows.Forms.ListView LV1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ListView LV2;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
     }
 }
 
