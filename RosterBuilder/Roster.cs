@@ -20,11 +20,6 @@ namespace RosterBuilder
             InitializeComponent();
         }
 
-        private void codex_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void RosterView_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
@@ -49,8 +44,8 @@ namespace RosterBuilder
 
         private void RosterView_Load(object sender, EventArgs e)
         {
-            LV1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Clickable;
-            LV1.Items.Clear();
+            armylist.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Clickable;
+            armylist.Items.Clear();
             List<Unit> cos;
             try
             {
@@ -61,9 +56,9 @@ namespace RosterBuilder
                     for (int i = 0; i < cos.Count; i++)
                     {
                         unit = cos[i];
-                        LV1.Items.Add(unit.getUnitName.ToString());
-                        LV1.Items[i].SubItems.Add(unit.getUnitType);
-                        LV1.Items[i].SubItems.Add(unit.getUnitCost.ToString());
+                        armylist.Items.Add(unit.getUnitName.ToString());
+                        armylist.Items[i].SubItems.Add(unit.getUnitType);
+                        armylist.Items[i].SubItems.Add(unit.getUnitCost.ToString());
 
                     }
                 }
@@ -82,7 +77,7 @@ namespace RosterBuilder
 
         private void countbtn_Click(object sender, EventArgs e)
         {
-            var sum = this.LV1.Items
+            var sum = this.armylist.Items
               .Cast<ListViewItem>()
               .Sum(item => int.Parse(item.SubItems[2].Text));
             totalbox.Text = sum.ToString();

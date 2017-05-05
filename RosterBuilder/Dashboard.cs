@@ -26,7 +26,7 @@ namespace RosterBuilder
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-           // nicklabel.Text = 
+           // nicklabel.Text = currentuserlogin
         }
     }
 }

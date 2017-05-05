@@ -44,11 +44,11 @@
             this.unitnamebox = new System.Windows.Forms.TextBox();
             this.unittypebox = new System.Windows.Forms.TextBox();
             this.modelcostbox = new System.Windows.Forms.TextBox();
-            this.LV1 = new System.Windows.Forms.ListView();
+            this.armylist = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.LV2 = new System.Windows.Forms.ListView();
+            this.rosterlist = new System.Windows.Forms.ListView();
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -176,18 +176,18 @@
             this.modelcostbox.Size = new System.Drawing.Size(100, 20);
             this.modelcostbox.TabIndex = 20;
             // 
-            // LV1
+            // armylist
             // 
-            this.LV1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.armylist.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
-            this.LV1.Location = new System.Drawing.Point(221, 29);
-            this.LV1.Name = "LV1";
-            this.LV1.Size = new System.Drawing.Size(751, 198);
-            this.LV1.TabIndex = 21;
-            this.LV1.UseCompatibleStateImageBehavior = false;
-            this.LV1.View = System.Windows.Forms.View.Details;
+            this.armylist.Location = new System.Drawing.Point(221, 29);
+            this.armylist.Name = "armylist";
+            this.armylist.Size = new System.Drawing.Size(751, 198);
+            this.armylist.TabIndex = 21;
+            this.armylist.UseCompatibleStateImageBehavior = false;
+            this.armylist.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
@@ -201,18 +201,18 @@
             // 
             this.columnHeader3.Text = "Cost";
             // 
-            // LV2
+            // rosterlist
             // 
-            this.LV2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.rosterlist.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6});
-            this.LV2.Location = new System.Drawing.Point(221, 273);
-            this.LV2.Name = "LV2";
-            this.LV2.Size = new System.Drawing.Size(751, 198);
-            this.LV2.TabIndex = 22;
-            this.LV2.UseCompatibleStateImageBehavior = false;
-            this.LV2.View = System.Windows.Forms.View.Details;
+            this.rosterlist.Location = new System.Drawing.Point(221, 273);
+            this.rosterlist.Name = "rosterlist";
+            this.rosterlist.Size = new System.Drawing.Size(751, 198);
+            this.rosterlist.TabIndex = 22;
+            this.rosterlist.UseCompatibleStateImageBehavior = false;
+            this.rosterlist.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader4
             // 
@@ -243,8 +243,8 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(984, 606);
             this.Controls.Add(this.countbtn);
-            this.Controls.Add(this.LV2);
-            this.Controls.Add(this.LV1);
+            this.Controls.Add(this.rosterlist);
+            this.Controls.Add(this.armylist);
             this.Controls.Add(this.modelcostbox);
             this.Controls.Add(this.unittypebox);
             this.Controls.Add(this.unitnamebox);
@@ -283,11 +283,11 @@
         private System.Windows.Forms.TextBox unitnamebox;
         private System.Windows.Forms.TextBox unittypebox;
         private System.Windows.Forms.TextBox modelcostbox;
-        private System.Windows.Forms.ListView LV1;
+        private System.Windows.Forms.ListView armylist;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ListView LV2;
+        private System.Windows.Forms.ListView rosterlist;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
