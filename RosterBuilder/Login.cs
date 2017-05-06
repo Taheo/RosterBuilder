@@ -21,6 +21,7 @@ namespace RosterBuilder
 
         private void loginbtn_Click(object sender, EventArgs e)
         {
+            
             Hide();
             DisplayController.ShowDashboard();
             Close();
@@ -28,9 +29,9 @@ namespace RosterBuilder
 
         private void registerbtn_Click(object sender, EventArgs e)
         {
-            Hide();
-            DisplayController.ShowRegister();
-            Close();
+                Hide();
+                DisplayController.ShowRegister();
+                Close();
         }
 
 

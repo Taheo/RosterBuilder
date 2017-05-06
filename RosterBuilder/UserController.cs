@@ -11,7 +11,7 @@ namespace RosterBuilder
     {
         
 
-        bool ValidateUserPassword(string _password)
+        public static bool ValidateUserPassword(string _password)
         {
             var hasNumber = new Regex(@"[0-9]+");
             var hasUpperChar = new Regex(@"[A-Z]+");
@@ -22,7 +22,8 @@ namespace RosterBuilder
             if (hasLowerChar.IsMatch(_password) &&
                 hasNumber.IsMatch(_password) &&
                 hasUpperChar.IsMatch(_password) &&
-                hasSymbols.IsMatch(_password))
+                hasSymbols.IsMatch(_password) &&
+                hasSafeLength.IsMatch(_password))
             {
                 return true;
             }
@@ -32,7 +33,7 @@ namespace RosterBuilder
             }
         }
 
-        bool ValidateUserEmail(string _email)
+       public static bool ValidateUserEmail(string _email)
         {
             var hasSymbols = new Regex(@"[!@#$%^&*()_+=\[{\]};:<>|./?,-]");
 
