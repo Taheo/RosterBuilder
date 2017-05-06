@@ -188,6 +188,7 @@
             this.armylist.TabIndex = 21;
             this.armylist.UseCompatibleStateImageBehavior = false;
             this.armylist.View = System.Windows.Forms.View.Details;
+            this.armylist.ItemActivate += new System.EventHandler(this.armylist_ItemActivate);
             // 
             // columnHeader1
             // 

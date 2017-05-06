@@ -77,7 +77,7 @@ namespace RosterBuilder
             List<Unit> UnitList = new List<Unit>();
 
             SqlConnection conn = GetConnection();
-            string selStmt = "SELECT * FROM Unit ORDER BY Id";
+            string selStmt = "SELECT * FROM Unit ORDER BY UnitName";
             SqlCommand selCmd = new SqlCommand(selStmt, conn);
             try
             {
@@ -86,7 +86,7 @@ namespace RosterBuilder
                 while (reader.Read())
                 {
                     Unit unit = new Unit();
-                    unit.getID = (int)reader["Id"];
+                   // unit.getID = (int)reader["Id"];
                     unit.getUnitName = reader["UnitName"].ToString();
                     unit.getUnitType = reader["UnitType"].ToString();
                     unit.getUnitCost = (int)reader["CostPerModel"];
