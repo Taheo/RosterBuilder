@@ -21,25 +21,9 @@ namespace RosterBuilder
 
         private void loginbtn_Click(object sender, EventArgs e)
         {
-            var hasNumber = new Regex(@"[0-9]+");
-            var hasUpperChar = new Regex(@"[A-Z]+");
-            var hasLowerChar = new Regex(@"[a-z]");
-            var hasSymbols = new Regex(@"[!@#$%^&*()_+=\[{\]};:<>|./?,-]");
-            if (
-                hasLowerChar.IsMatch(logintext.Text) &&
-                hasNumber.IsMatch(logintext.Text) &&
-                hasUpperChar.IsMatch(logintext.Text) && 
-                hasSymbols.IsMatch(logintext.Text)
-                )
-            {
-                Hide();
-                DisplayController.ShowDashboard();
-                Close();
-            }
-            else
-            {
-                MessageBox.Show("NOPE");
-            }
+            Hide();
+            DisplayController.ShowDashboard();
+            Close();
         }
 
         private void registerbtn_Click(object sender, EventArgs e)
