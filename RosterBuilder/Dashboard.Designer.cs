@@ -79,6 +79,7 @@
             this.rulesbtn.TabIndex = 5;
             this.rulesbtn.Text = "Rules";
             this.rulesbtn.UseVisualStyleBackColor = true;
+            this.rulesbtn.Click += new System.EventHandler(this.rulesbtn_Click);
             // 
             // Dashboard
             // 

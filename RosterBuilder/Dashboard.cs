@@ -28,5 +28,10 @@ namespace RosterBuilder
         {
            // nicklabel.Text = currentuserlogin
         }
+
+        private void rulesbtn_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://azylium.vot.pl/download/Mordheim_PL_ver10.pdf");
+        }
     }
 }
