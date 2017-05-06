@@ -44,18 +44,17 @@ namespace RosterBuilder
 
         private void RosterView_Load(object sender, EventArgs e)
         {
-            armylist.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Clickable;
             armylist.Items.Clear();
-            List<Unit> cos;
+            List<Unit> tempUnitlist;
             try
             {
-                cos = dbcontroller.GetUnit();
-                if (cos.Count() > 0)
+                tempUnitlist = dbcontroller.GetUnit();
+                if (tempUnitlist.Count() > 0)
                 {
                     Unit unit;
-                    for (int i = 0; i < cos.Count; i++)
+                    for (int i = 0; i < tempUnitlist.Count; i++)
                     {
-                        unit = cos[i];
+                        unit = tempUnitlist[i];
                         armylist.Items.Add(unit.getUnitName.ToString());
                         armylist.Items[i].SubItems.Add(unit.getUnitType);
                         armylist.Items[i].SubItems.Add(unit.getUnitCost.ToString());
