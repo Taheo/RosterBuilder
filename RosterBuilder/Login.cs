@@ -21,15 +21,19 @@ namespace RosterBuilder
 
         private void loginbtn_Click(object sender, EventArgs e)
         {
+
             if (dbcontroller.CheckPlayerExist(logintext.Text) == true)
             {
-                
-                dbcontroller.LoginUser(logintext.Text, passwordtext.Text);
-                
-                Hide();
-                
-                DisplayController.ShowDashboard();
-                Close();
+                if (dbcontroller.Logowanie(logintext.Text, passwordtext.Text) == true)
+                {
+                    Hide();
+                    DisplayController.ShowDashboard();
+                    Close();
+                }
+                else
+                {
+                    MessageBox.Show("Enter correct data");
+                }    
             }
             else
             {
