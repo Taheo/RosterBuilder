@@ -21,10 +21,25 @@ namespace RosterBuilder
 
         private void loginbtn_Click(object sender, EventArgs e)
         {
+
+            //Hide();
+            //DisplayController.ShowDashboard();
+            if (dbcontroller.CheckPlayerExist(logintext.Text) == true)
+            {
+                
+                dbcontroller.LoginUser(logintext.Text, passwordtext.Text);
+                Hide();
+                
+                DisplayController.ShowDashboard();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Noooo");
+            }
+
             
-            Hide();
-            DisplayController.ShowDashboard();
-            Close();
+            //Close();
         }
 
         private void registerbtn_Click(object sender, EventArgs e)

@@ -117,6 +117,22 @@ namespace RosterBuilder
 
         }
 
+        public static bool CheckPlayerExist(string _username)
+        {
+            SqlConnection conn = GetConnection();
+            SqlDataAdapter selStmt = new SqlDataAdapter("SELECT * FROM UserTable WHERE Username = '" + _username + "'", conn);
+            DataTable dt = new System.Data.DataTable();
+            selStmt.Fill(dt);
+            if (dt.Rows.Count >= 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
 
 
     }
