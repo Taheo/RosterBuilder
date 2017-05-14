@@ -18,12 +18,13 @@ namespace RosterBuilder
         }
         public static void AddUser(string _username, string _password, string _email)
         {
-            string insStmt = "INSERT INTO [UserTable] (Username, Email, Password) VALUES (@username, @email, @password)";
+            string insStmt = "INSERT INTO [UserTable] (Username, Password, Email) VALUES (@username, @password, @email)";
             SqlConnection conn = GetConnection();
             SqlCommand insCmd = new SqlCommand(insStmt, conn);
             insCmd.Parameters.AddWithValue("@username", _username);
-            insCmd.Parameters.AddWithValue("@email", _email);
             insCmd.Parameters.AddWithValue("@password", _password);
+            insCmd.Parameters.AddWithValue("@email", _email);
+            
 
             try { conn.Open(); insCmd.ExecuteNonQuery(); }
             catch (SqlException ex) { throw ex; }

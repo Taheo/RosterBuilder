@@ -13,7 +13,7 @@ namespace RosterBuilder
 {
     public partial class Login : Form
     {
-        //var currentuser = 
+         
            public Login()
         {
             InitializeComponent();
@@ -21,13 +21,11 @@ namespace RosterBuilder
 
         private void loginbtn_Click(object sender, EventArgs e)
         {
-
-            //Hide();
-            //DisplayController.ShowDashboard();
             if (dbcontroller.CheckPlayerExist(logintext.Text) == true)
             {
                 
                 dbcontroller.LoginUser(logintext.Text, passwordtext.Text);
+                
                 Hide();
                 
                 DisplayController.ShowDashboard();
@@ -37,11 +35,8 @@ namespace RosterBuilder
             {
                 MessageBox.Show("Noooo");
             }
-
-            
-            //Close();
         }
-
+        
         private void registerbtn_Click(object sender, EventArgs e)
         {
                 Hide();
@@ -49,11 +44,9 @@ namespace RosterBuilder
                 Close();
         }
 
-
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
-
     }
 }

@@ -24,10 +24,11 @@ namespace RosterBuilder
             if (UserController.ValidateUserPassword(passwordtext.Text) == true &&
                 UserController.ValidateUserEmail(emailtext.Text) == true)
             {
-                dbcontroller.AddUser(logintext.Text, emailtext.Text, passwordtext.Text);
+                dbcontroller.AddUser(logintext.Text, passwordtext.Text, emailtext.Text);
                 logintext.Text = "";
-                emailtext.Text = "";
                 passwordtext.Text = "";
+                emailtext.Text = "";
+                
             }
             else
             {
