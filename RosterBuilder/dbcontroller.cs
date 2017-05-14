@@ -101,22 +101,22 @@ namespace RosterBuilder
         }
 
 
-        public static bool LoginUser(string _username, string _password)
-        {
-            SqlConnection conn = GetConnection();
-            SqlDataAdapter selStmt = new SqlDataAdapter("SELECT Username FROM UserTable WHERE Username = '" + _username + "' AND Password = '" + _password + "'", conn);
-            DataTable dt = new System.Data.DataTable();
-            selStmt.Fill(dt);
-            if (dt.Rows.Count == 1)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+        //public static bool LoginUser(string _username, string _password)
+        //{
+        //    SqlConnection conn = GetConnection();
+        //    SqlDataAdapter selStmt = new SqlDataAdapter("SELECT Username FROM UserTable WHERE Username = '" + _username + "' AND Password = '" + _password + "'", conn);
+        //    DataTable dt = new System.Data.DataTable();
+        //    selStmt.Fill(dt);
+        //    if (dt.Rows.Count == 1)
+        //    {
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
 
-        }
+        //}
 
         public static bool CheckPlayerExist(string _username)
         {
@@ -134,17 +134,17 @@ namespace RosterBuilder
             }
         }
 
-        public static bool Logowanie(string _username, string _password)
+        public static bool LoginUser(string _username, string _password)
         {
-            SqlConnection con = GetConnection();
-            SqlCommand cmd = new SqlCommand("Select * from UserTable where Username=@username and Password=@password", con);
+            SqlConnection conn = GetConnection();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM UserTable WHERE Username=@username and Password=@password", conn);
             cmd.Parameters.AddWithValue("@username", _username);
             cmd.Parameters.AddWithValue("@password", _password);
-            con.Open();
-            SqlDataAdapter adapt = new SqlDataAdapter(cmd);
+            conn.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
-            adapt.Fill(ds);
-            con.Close();
+            adapter.Fill(ds);
+            conn.Close();
             if (ds.Tables[0].Rows.Count == 1)
             {
                 return true;

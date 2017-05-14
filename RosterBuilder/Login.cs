@@ -24,33 +24,42 @@ namespace RosterBuilder
 
             if (dbcontroller.CheckPlayerExist(logintext.Text) == true)
             {
-                if (dbcontroller.Logowanie(logintext.Text, passwordtext.Text) == true)
+                if (dbcontroller.LoginUser(logintext.Text, passwordtext.Text) == true)
                 {
                     Hide();
                     DisplayController.ShowDashboard();
                     Close();
                 }
+
                 else
                 {
                     MessageBox.Show("Enter correct data");
+                    Clearing();
                 }    
             }
             else
             {
-                MessageBox.Show("Noooo");
+                MessageBox.Show("User not exist");
+                Clearing();
             }
         }
         
         private void registerbtn_Click(object sender, EventArgs e)
         {
-                Hide();
-                DisplayController.ShowRegister();
-                Close();
+            Hide();
+            DisplayController.ShowRegister();
+            Close();
         }
 
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        void Clearing()
+        {
+            logintext.Text = "";
+            passwordtext.Text = "";
         }
     }
 }
