@@ -26,7 +26,7 @@ namespace RosterBuilder
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            //nicklabel.Text = Login.NickPicker();
+            
         }
 
         private void rulesbtn_Click(object sender, EventArgs e)

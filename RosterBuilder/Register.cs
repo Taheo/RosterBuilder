@@ -34,8 +34,6 @@ namespace RosterBuilder
             {
                 MessageBox.Show("Enter correct data");
             }
-
-
         }
 
         private void Register_FormClosing(object sender, FormClosingEventArgs e)

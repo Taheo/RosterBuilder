@@ -87,29 +87,30 @@ namespace RosterBuilder
 
         private void armylist_ItemActivate(object sender, EventArgs e)
         {
-            // MessageBox.Show("Yes, this is click");
-            //armylist.Items[].SubItems = rosterlist.Items[];
+             //MessageBox.Show("Yes, this is click");
 
-            //Unit unit;
-            //for (int i = 0; i < tempUnitlist.Count; i++)
-            //{
-            //    unit = tempUnitlist[i];
-            //    armylist.Items.Add(unit.getUnitName.ToString());
-            //    armylist.Items[i].SubItems.Add(unit.getUnitType);
-            //    armylist.Items[i].SubItems.Add(unit.getUnitCost.ToString());
+            try
+            {
 
-            ////}
-        
-            //    Unit unit2;
-            //    for (int i = 0; i < tempUnitlist.Count; i++)
-            //    {
-            //        unit2 = tempUnitlist2[i];
-            //        rosterlist.Items.Add(unit2.getUnitName.ToString());
-            //        rosterlist.Items[i].SubItems.Add(unit2.getUnitType);
-            //        rosterlist.Items[i].SubItems.Add(unit2.getUnitCost.ToString());
-                    
-            //    }
-            
+                ListViewItem itemClone;
+                //ListView.ListViewItemCollection coll = armylist.Items;
+
+                foreach (ListViewItem item in armylist.SelectedItems)
+                {
+                    itemClone = item.Clone() as ListViewItem;
+                    //armylist.Items.Remove(item);
+                    rosterlist.Items.Add(itemClone);
+                }
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, ex.GetType().ToString());
+            }
         }
     }
 }

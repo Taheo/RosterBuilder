@@ -100,24 +100,6 @@ namespace RosterBuilder
             return UnitList;
         }
 
-
-        //public static bool LoginUser(string _username, string _password)
-        //{
-        //    SqlConnection conn = GetConnection();
-        //    SqlDataAdapter selStmt = new SqlDataAdapter("SELECT Username FROM UserTable WHERE Username = '" + _username + "' AND Password = '" + _password + "'", conn);
-        //    DataTable dt = new System.Data.DataTable();
-        //    selStmt.Fill(dt);
-        //    if (dt.Rows.Count == 1)
-        //    {
-        //        return true;
-        //    }
-        //    else
-        //    {
-        //        return false;
-        //    }
-
-        //}
-
         public static bool CheckPlayerExist(string _username)
         {
             SqlConnection conn = GetConnection();
@@ -154,6 +136,5 @@ namespace RosterBuilder
                 return false;
             }
         }
-
     }
 }
