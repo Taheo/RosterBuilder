@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace RosterBuilder
 {
-    public class RosterController
+    public abstract class RosterController
     {
         
-       //methods for dashboard
+     
     }
 }

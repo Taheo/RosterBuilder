@@ -16,7 +16,6 @@ namespace RosterBuilder
     public partial class RosterView : Form
     {
         List<Unit> tempUnitlist;
-        List<Unit> tempUnitlist2;
         public RosterView()
         {
             InitializeComponent();
@@ -25,7 +24,6 @@ namespace RosterBuilder
         private void RosterView_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
-            //Close();
         }
 
         private void backbtn_Click(object sender, EventArgs e)
@@ -108,6 +106,27 @@ namespace RosterBuilder
             foreach (ListViewItem item in rosterlist.SelectedItems)
             {
                 rosterlist.Items.Remove(item);
+            }
+        }
+
+        private void savebtn_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "CSV|*.csv", ValidateNames = true })
+            {
+                if (sfd.ShowDialog()==DialogResult.OK)
+                {
+                    using (StreamWriter sw = new StreamWriter(new FileStream(sfd.FileName, FileMode.Create), Encoding.UTF8))
+                    {
+                        StringBuilder sb = new StringBuilder();
+                        sb.AppendLine("Unit Nick, Type, Cost");
+                        foreach (ListViewItem item in rosterlist.Items)
+                        {
+                            sb.AppendLine(string.Format("{0}, {1}, {2}", item.SubItems[0].Text, item.SubItems[1].Text, item.SubItems[2].Text));
+                        }
+                        sw.WriteLine(sb.ToString());
+                        MessageBox.Show("Saved successfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
             }
         }
     }
