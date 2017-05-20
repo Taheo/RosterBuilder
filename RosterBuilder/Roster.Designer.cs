@@ -214,6 +214,7 @@
             this.rosterlist.TabIndex = 22;
             this.rosterlist.UseCompatibleStateImageBehavior = false;
             this.rosterlist.View = System.Windows.Forms.View.Details;
+            this.rosterlist.ItemActivate += new System.EventHandler(this.rosterlist_ItemActivate);
             // 
             // columnHeader4
             // 

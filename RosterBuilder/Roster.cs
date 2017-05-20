@@ -61,7 +61,6 @@ namespace RosterBuilder
                         armylist.Items.Add(unit.getUnitName.ToString());
                         armylist.Items[i].SubItems.Add(unit.getUnitType);
                         armylist.Items[i].SubItems.Add(unit.getUnitCost.ToString());
-
                     }
                 }
                 else
@@ -79,7 +78,7 @@ namespace RosterBuilder
 
         private void countbtn_Click(object sender, EventArgs e)
         {
-            var sum = this.armylist.Items
+            var sum = this.rosterlist.Items
               .Cast<ListViewItem>()
               .Sum(item => int.Parse(item.SubItems[2].Text));
             totalbox.Text = sum.ToString();
@@ -87,29 +86,28 @@ namespace RosterBuilder
 
         private void armylist_ItemActivate(object sender, EventArgs e)
         {
-             //MessageBox.Show("Yes, this is click");
-
             try
             {
 
                 ListViewItem itemClone;
-                //ListView.ListViewItemCollection coll = armylist.Items;
-
                 foreach (ListViewItem item in armylist.SelectedItems)
                 {
                     itemClone = item.Clone() as ListViewItem;
-                    //armylist.Items.Remove(item);
                     rosterlist.Items.Add(itemClone);
                 }
-
-
-
-
             }
             catch (Exception ex)
             {
 
                 MessageBox.Show(ex.Message, ex.GetType().ToString());
+            }
+        }
+
+        private void rosterlist_ItemActivate(object sender, EventArgs e)
+        {
+            foreach (ListViewItem item in rosterlist.SelectedItems)
+            {
+                rosterlist.Items.Remove(item);
             }
         }
     }
