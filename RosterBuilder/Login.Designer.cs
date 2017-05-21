@@ -39,26 +39,29 @@
             // loginlabel
             // 
             this.loginlabel.AutoSize = true;
-            this.loginlabel.Location = new System.Drawing.Point(131, 171);
+            this.loginlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.loginlabel.Location = new System.Drawing.Point(124, 126);
             this.loginlabel.Name = "loginlabel";
-            this.loginlabel.Size = new System.Drawing.Size(33, 13);
+            this.loginlabel.Size = new System.Drawing.Size(48, 20);
             this.loginlabel.TabIndex = 0;
             this.loginlabel.Text = "Login";
             // 
             // passlabel
             // 
             this.passlabel.AutoSize = true;
-            this.passlabel.Location = new System.Drawing.Point(133, 211);
+            this.passlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.passlabel.Location = new System.Drawing.Point(124, 166);
             this.passlabel.Name = "passlabel";
-            this.passlabel.Size = new System.Drawing.Size(53, 13);
+            this.passlabel.Size = new System.Drawing.Size(78, 20);
             this.passlabel.TabIndex = 1;
             this.passlabel.Text = "Password";
             // 
             // loginbtn
             // 
-            this.loginbtn.Location = new System.Drawing.Point(192, 249);
+            this.loginbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.loginbtn.Location = new System.Drawing.Point(128, 207);
             this.loginbtn.Name = "loginbtn";
-            this.loginbtn.Size = new System.Drawing.Size(100, 23);
+            this.loginbtn.Size = new System.Drawing.Size(200, 50);
             this.loginbtn.TabIndex = 2;
             this.loginbtn.Text = "Sign In";
             this.loginbtn.UseVisualStyleBackColor = true;
@@ -66,24 +69,25 @@
             // 
             // logintext
             // 
-            this.logintext.Location = new System.Drawing.Point(192, 168);
+            this.logintext.Location = new System.Drawing.Point(215, 126);
             this.logintext.Name = "logintext";
-            this.logintext.Size = new System.Drawing.Size(100, 20);
+            this.logintext.Size = new System.Drawing.Size(113, 20);
             this.logintext.TabIndex = 3;
             // 
             // passwordtext
             // 
-            this.passwordtext.Location = new System.Drawing.Point(192, 208);
+            this.passwordtext.Location = new System.Drawing.Point(215, 166);
             this.passwordtext.Name = "passwordtext";
             this.passwordtext.PasswordChar = '*';
-            this.passwordtext.Size = new System.Drawing.Size(100, 20);
+            this.passwordtext.Size = new System.Drawing.Size(113, 20);
             this.passwordtext.TabIndex = 4;
             // 
             // registerbtn
             // 
-            this.registerbtn.Location = new System.Drawing.Point(192, 278);
+            this.registerbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.registerbtn.Location = new System.Drawing.Point(128, 263);
             this.registerbtn.Name = "registerbtn";
-            this.registerbtn.Size = new System.Drawing.Size(100, 23);
+            this.registerbtn.Size = new System.Drawing.Size(200, 50);
             this.registerbtn.TabIndex = 5;
             this.registerbtn.Text = "Sign Up";
             this.registerbtn.UseVisualStyleBackColor = true;

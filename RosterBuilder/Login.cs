@@ -33,13 +33,14 @@ namespace RosterBuilder
 
                 else
                 {
-                    MessageBox.Show("Enter correct data");
+                    
                     Clearing();
+                    MessageBox.Show("Enter correct data.", "Login Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }    
             }
             else
             {
-                MessageBox.Show("User not exist");
+                MessageBox.Show("User not exist. Sign up yourself.", "New User Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Clearing();
             }
         }

@@ -64,7 +64,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(14, 257);
+            this.label1.Location = new System.Drawing.Point(15, 87);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 20, 5, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 17);
@@ -75,7 +75,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(14, 283);
+            this.label2.Location = new System.Drawing.Point(15, 113);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 20, 5, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 17);
@@ -86,7 +86,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(14, 314);
+            this.label4.Location = new System.Drawing.Point(15, 144);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 20, 5, 20);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 17);
@@ -116,7 +116,7 @@
             // 
             // addbtn
             // 
-            this.addbtn.Location = new System.Drawing.Point(37, 364);
+            this.addbtn.Location = new System.Drawing.Point(18, 197);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(79, 30);
             this.addbtn.TabIndex = 9;
@@ -158,21 +158,21 @@
             // 
             // unitnamebox
             // 
-            this.unitnamebox.Location = new System.Drawing.Point(77, 258);
+            this.unitnamebox.Location = new System.Drawing.Point(78, 88);
             this.unitnamebox.Name = "unitnamebox";
             this.unitnamebox.Size = new System.Drawing.Size(115, 20);
             this.unitnamebox.TabIndex = 18;
             // 
             // unittypebox
             // 
-            this.unittypebox.Location = new System.Drawing.Point(77, 280);
+            this.unittypebox.Location = new System.Drawing.Point(78, 110);
             this.unittypebox.Name = "unittypebox";
             this.unittypebox.Size = new System.Drawing.Size(115, 20);
             this.unittypebox.TabIndex = 19;
             // 
             // modelcostbox
             // 
-            this.modelcostbox.Location = new System.Drawing.Point(92, 311);
+            this.modelcostbox.Location = new System.Drawing.Point(93, 141);
             this.modelcostbox.Name = "modelcostbox";
             this.modelcostbox.Size = new System.Drawing.Size(100, 20);
             this.modelcostbox.TabIndex = 20;

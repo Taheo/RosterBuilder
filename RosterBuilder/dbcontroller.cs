@@ -25,7 +25,6 @@ namespace RosterBuilder
             insCmd.Parameters.AddWithValue("@password", _password);
             insCmd.Parameters.AddWithValue("@email", _email);
             
-
             try { conn.Open(); insCmd.ExecuteNonQuery(); }
             catch (SqlException ex) { throw ex; }
             finally { conn.Close(); }

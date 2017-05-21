@@ -35,13 +35,16 @@
             this.regpass = new System.Windows.Forms.Label();
             this.emailtext = new System.Windows.Forms.TextBox();
             this.regemail = new System.Windows.Forms.Label();
+            this.backbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // registerbtn
             // 
-            this.registerbtn.Location = new System.Drawing.Point(208, 302);
+            this.registerbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.registerbtn.Location = new System.Drawing.Point(294, 260);
+            this.registerbtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.registerbtn.Name = "registerbtn";
-            this.registerbtn.Size = new System.Drawing.Size(100, 55);
+            this.registerbtn.Size = new System.Drawing.Size(150, 40);
             this.registerbtn.TabIndex = 0;
             this.registerbtn.Text = "Sign Up";
             this.registerbtn.UseVisualStyleBackColor = true;
@@ -49,59 +52,81 @@
             // 
             // passwordtext
             // 
-            this.passwordtext.Location = new System.Drawing.Point(156, 221);
+            this.passwordtext.Location = new System.Drawing.Point(223, 145);
+            this.passwordtext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.passwordtext.Name = "passwordtext";
             this.passwordtext.PasswordChar = '*';
-            this.passwordtext.Size = new System.Drawing.Size(200, 20);
+            this.passwordtext.Size = new System.Drawing.Size(298, 26);
             this.passwordtext.TabIndex = 5;
             // 
             // logintext
             // 
-            this.logintext.Location = new System.Drawing.Point(156, 195);
+            this.logintext.Location = new System.Drawing.Point(223, 105);
+            this.logintext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.logintext.Name = "logintext";
-            this.logintext.Size = new System.Drawing.Size(200, 20);
+            this.logintext.Size = new System.Drawing.Size(298, 26);
             this.logintext.TabIndex = 6;
             // 
             // reglogin
             // 
             this.reglogin.AutoSize = true;
-            this.reglogin.Location = new System.Drawing.Point(90, 202);
+            this.reglogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.reglogin.Location = new System.Drawing.Point(124, 116);
+            this.reglogin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.reglogin.Name = "reglogin";
-            this.reglogin.Size = new System.Drawing.Size(33, 13);
+            this.reglogin.Size = new System.Drawing.Size(48, 20);
             this.reglogin.TabIndex = 7;
             this.reglogin.Text = "Login";
             // 
             // regpass
             // 
             this.regpass.AutoSize = true;
-            this.regpass.Location = new System.Drawing.Point(90, 228);
+            this.regpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.regpass.Location = new System.Drawing.Point(124, 156);
+            this.regpass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.regpass.Name = "regpass";
-            this.regpass.Size = new System.Drawing.Size(53, 13);
+            this.regpass.Size = new System.Drawing.Size(78, 20);
             this.regpass.TabIndex = 8;
             this.regpass.Text = "Password";
             // 
             // emailtext
             // 
-            this.emailtext.Location = new System.Drawing.Point(156, 247);
+            this.emailtext.Location = new System.Drawing.Point(223, 185);
+            this.emailtext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.emailtext.Name = "emailtext";
-            this.emailtext.Size = new System.Drawing.Size(200, 20);
+            this.emailtext.Size = new System.Drawing.Size(298, 26);
             this.emailtext.TabIndex = 10;
             // 
             // regemail
             // 
             this.regemail.AutoSize = true;
-            this.regemail.Location = new System.Drawing.Point(90, 252);
+            this.regemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.regemail.Location = new System.Drawing.Point(124, 193);
+            this.regemail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.regemail.Name = "regemail";
-            this.regemail.Size = new System.Drawing.Size(32, 13);
+            this.regemail.Size = new System.Drawing.Size(48, 20);
             this.regemail.TabIndex = 11;
             this.regemail.Text = "Email";
             // 
+            // backbtn
+            // 
+            this.backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.backbtn.Location = new System.Drawing.Point(294, 310);
+            this.backbtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(150, 40);
+            this.backbtn.TabIndex = 12;
+            this.backbtn.Text = "Back";
+            this.backbtn.UseVisualStyleBackColor = true;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
+            // 
             // Register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(504, 481);
+            this.ClientSize = new System.Drawing.Size(756, 526);
+            this.Controls.Add(this.backbtn);
             this.Controls.Add(this.regemail);
             this.Controls.Add(this.emailtext);
             this.Controls.Add(this.regpass);
@@ -109,6 +134,8 @@
             this.Controls.Add(this.logintext);
             this.Controls.Add(this.passwordtext);
             this.Controls.Add(this.registerbtn);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Register";
             this.Text = "Register";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Register_FormClosing);
@@ -126,5 +153,6 @@
         private System.Windows.Forms.Label regpass;
         private System.Windows.Forms.TextBox emailtext;
         private System.Windows.Forms.Label regemail;
+        private System.Windows.Forms.Button backbtn;
     }
 }

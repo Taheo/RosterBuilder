@@ -28,17 +28,23 @@ namespace RosterBuilder
                 logintext.Text = "";
                 passwordtext.Text = "";
                 emailtext.Text = "";
-                
             }
             else
             {
-                MessageBox.Show("Enter correct data");
+                MessageBox.Show("Enter safe password and useranem data");
             }
         }
 
         private void Register_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void backbtn_Click(object sender, EventArgs e)
+        {
+            Hide();
+            DisplayController.ShowLogin();
+            Close();
         }
     }
 }
